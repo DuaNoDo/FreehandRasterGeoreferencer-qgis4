@@ -159,7 +159,7 @@ class FreehandRasterGeoreferencer(object):
         self.georefGcpTool.setAction(self.actionGeorefGcpRaster)
 
         self.actionGeorefGridGcpRaster = QAction(
-            QIcon(":/plugins/freehandrastergeoreferencer/icon2Points.png"),
+            QIcon(":/plugins/freehandrastergeoreferencer/iconGridGcp.png"),
             "Georeference with grid ground control points",
             self.iface.mainWindow(),
         )
