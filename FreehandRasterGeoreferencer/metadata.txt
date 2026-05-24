@@ -1,0 +1,62 @@
+[general]
+name = Freehand raster georeferencer
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.99
+description = Interactive georeferencing of rasters
+about = Interactive georeferencing of rasters (move, rotate, scale, GCP grid, export). Maintained by Taeyeon Won (teadone@konkuk.ac.kr). Original plugin by Guilhem Vellut (g@vellut.com).
+version = 0.9.1
+author = Taeyeon Won
+email = teadone@konkuk.ac.kr
+tags = raster,georeferencing
+homepage = http://gvellut.github.io/FreehandRasterGeoreferencer/
+tracker = https://github.com/gvellut/FreehandRasterGeoreferencer/issues
+repository = https://github.com/gvellut/FreehandRasterGeoreferencer
+icon = icon.png
+experimental = False
+deprecated = False
+category = Raster
+changelog = 
+    0.9.1
+        * Grid GCP layouts up to 6 x 6
+        * Manual and grid GCP tools with TPS preview and export
+        * NoData transparency option in layer properties
+    0.9.0
+        * Ported to QGIS 4 / Qt6 (qgis.PyQt, updated PyQGIS enums)
+    0.8.3
+        * Disable pixel transformation for formats other than TIFF
+    0.8.0
+        * FIX #32 Correct issue with the toggling of map tools
+        * FIX #35 FIX #38 Add some transformation to the raster if type not directly suppoted by Qt
+        * FIX #36 Change rotation to allow 3 decimals
+        * FIX #39 Support opening of TIFF files with .tifF extension
+    0.7.1
+        * FIX #30 Added a setTransformContext method to plugin layer
+    0.7.0
+        * Add LZW compression when writing TIFF
+        * Solved an issue with the rendering of large rasters when rotated and zoomed out
+    0.6.3.0
+        * Added support for pdf (contributed by Takayuki Mizutani @tmizu23)
+        * Added support for undo (contributed by Takayuki Mizutani @tmizu23)
+        * Added support for duplicate Layer and replace image (contributed by Takayuki Mizutani @tmizu23)
+    0.5.3.3
+        * Added support for rotation by spinbox value (contributed by Takayuki Mizutani @tmizu23)
+    0.5.3.2
+        * Corrected issue with the saving of plugin layer custom properties on QGIS 3.4
+        * Corrected issue with the processing of relative image paths with an unsaved project on macOS
+    0.5.3.1
+        * Added support for rotation in import and export of georeferencing
+    0.5.3
+        * FIX #5 Initial georeference is read
+    0.4.1
+        * Same features as v0.4.0, updated to run with QGIS3
+    0.4.0
+        * FIX #10 Added dialog in scale tool to enter scale and DPI (contributed by @Dkrav-UA). The scale in X and Y will be computed based on the values entered.
+    0.3.0
+        * FIX #2 Added option for scale tool to maintain the relative scale in x and y dimension, using Ctrl modifier
+        * FIX #4 Corrected issue with accented file paths on Windows (Thanks to SzieberthAdam)
+        * FIX #8 Added opening and saving of TIFF files
+        * Added "Georeference with 2 Points" tool (contributed by Sebastien Barre)
+        * Added option for Rotate tool to rotate around point, using Ctrl modifier (contributed by Sebastien Barre)
+        * Changed the location of "Freehand Raster Georeferencer" menu, now under the Raster menu
+    0.2.0 
+	    * First public release for QGIS 2

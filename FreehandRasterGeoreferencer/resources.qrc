@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/plugins/freehandrastergeoreferencer" >
+        <file>icon.png</file>
+        <file>iconAdd.png</file>
+        <file>iconMove.png</file>
+        <file>iconRotate.png</file>
+        <file>iconScale.png</file>
+        <file>iconAdjust.png</file>
+        <file>icon2Points.png</file>
+        <file>iconTransparencyIncrease.png</file>
+        <file>iconTransparencyDecrease.png</file>
+        <file>iconExport.png</file>
+        <file>iconUndo.png</file>
+    </qresource>
+</RCC>
