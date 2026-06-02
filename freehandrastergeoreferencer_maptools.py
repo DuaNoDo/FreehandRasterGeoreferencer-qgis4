@@ -28,7 +28,7 @@ from .rastershadowmapcanvasitem import RasterShadowMapCanvasItem
 from .utils import tryfloat
 
 
-GRID_GCP_SIZES = (3, 4, 5, 6)
+GRID_GCP_SIZES = tuple(range(3, 16))
 
 
 def _grid_layout_label(size):
